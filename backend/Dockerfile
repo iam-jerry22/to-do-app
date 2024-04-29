@@ -1,4 +1,5 @@
 FROM node:14-alpine3.12
-COPY . .
+COPY ./app /app
 EXPOSE 4000
-CMD ["node","index.js"]
+CMD ["node", "/app/index.js"]
+
